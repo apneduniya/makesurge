@@ -9,12 +9,33 @@ import Features from './Features';
 import Services from './Services';
 import Contact from './Contact';
 
-import { useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import useFollowPointer from "./useFollowPointer";
 import Footer from './Footer';
 
 const inter = Inter({ subsets: ['latin'] });
+
+const useFollowPointer = (ref) => {
+  const [point, setPoint] = useState({ x: 100, y: 400 });
+
+  useEffect(() => {
+    if (!ref.current) return;
+
+    const handlePointerMove = ({ clientX, clientY }) => {
+      const element = ref.current;
+
+      const x = clientX - element.offsetLeft - element.offsetWidth / 2;
+      const y = clientY - element.offsetTop - element.offsetHeight / 2;
+      setPoint({ x, y });
+    };
+
+    window.addEventListener("pointermove", handlePointerMove);
+
+    return () => window.removeEventListener("pointermove", handlePointerMove);
+  }, []);
+
+  return point;
+}
 
 const App = () => {
   const ref = useRef(null);
