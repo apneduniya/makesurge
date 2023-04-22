@@ -1,0 +1,97 @@
+/* 
+
+Using Font Faces for loading ttf files for CSS because in production the google fonts css @import link does not load on first
+ so it doesn't get the css fonts, So we r using this to import the css via ttf files... 
+
+*/
+
+@font-face {
+    font-family: 'Tilt Neon';
+    src: url('/public/fonts/TiltNeon-Regular.ttf');
+    src: url('/public/fonts/TiltNeon-Regular.ttf') format('embedded-opentype'),
+        url('/public/fonts/TiltNeon-Regular.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Shantell Sans';
+    src: url('/public/fonts/ShantellSans-Regular.ttf');
+    src: url('/public/fonts/ShantellSans-Regular.ttf') format('embedded-opentype'),
+        url('/public/fonts/ShantellSans-Regular.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Varela Round';
+    src: url('/public/fonts/VarelaRound-Regular.ttf');
+    src: url('/public/fonts/VarelaRound-Regular.ttf') format('embedded-opentype'),
+        url('/public/fonts/VarelaRound-Regular.ttf') format('truetype'),
+}
+
+* {
+    box-sizing: border-box;
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    /* -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+    --sb-track-color: #b8b8b8;
+    --sb-thumb-color: #012970;
+    --sb-size: 10px;
+
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+}
+
+mark {
+    --padding-right: max(calc(0.4em + .2 * 0.4em), 0px);
+    --padding-left: max(calc(0.4em - .2 * 0.4em), 0px);
+    --offset-top: calc(50% + 0 * 1em);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    padding: 0 var(--padding-right) 0 var(--padding-left);
+    margin: 0;
+    background-color: transparent;
+    background-image: url(https://us-wn.gr-cdn.com/_next/static/media/mark.219d94f7.svg#left), url(https://us-wn.gr-cdn.com/_next/static/media/mark.219d94f7.svg#inside), url(https://us-wn.gr-cdn.com/_next/static/media/mark.219d94f7.svg#right);
+    background-position: 0 var(--offset-top), 0.4em var(--offset-top), right 0 top var(--offset-top);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: auto calc(1 * 1em), calc(100% - var(--padding-right) - var(--padding-left)) calc(1 * 1em), auto calc(1 * 1em);
+    color: inherit;
+    position: relative;
+    /* z-index: -1; */
+    user-select: none;
+}
+
+@media only screen and (max-width:1200px) {
+
+    .mouse-listener {
+        display: none;
+    }
+
+}

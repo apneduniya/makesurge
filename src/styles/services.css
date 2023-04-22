@@ -1,0 +1,176 @@
+
+.services-heading-container {
+    margin: 0;
+    padding: 0;
+    /* margin-top: 140px; */
+    color: #012970;
+    font-weight: 700 !important;
+    font-size: 3em;
+    line-height: 1.2;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-heading-container p {
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    transition: all .10s;
+}
+
+.services-child-container {
+    padding: 120px 100px;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 60px;
+    row-gap: 50px;
+}
+
+.services-flip-container {
+    margin: 0;
+    padding: 0;
+    height: 420px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    position: relative;
+    cursor: pointer;
+}
+
+.services-flip-front-container {
+    margin: 0;
+    padding: 0 40px;
+    border: 2px solid #012970;
+    border-radius: 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: -webkit-transform .7s cubic-bezier(.4,.2,.2,1);
+    transition: transform .7s cubic-bezier(.4,.2,.2,1);
+    transition: transform .7s cubic-bezier(.4,.2,.2,1), -webkit-transform .7s cubic-bezier(.4,.2,.2,1);
+    -webkit-transition: transform .7s cubic-bezier(.4,.2,.2,1);
+}
+
+.services-flip-back-container {
+    margin: 0;
+    padding: 0 40px;
+    border: 2px solid #012970;
+    border-radius: 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .7s cubic-bezier(.4,.2,.2,1);
+    transition: transform .7s cubic-bezier(.4,.2,.2,1);
+    transition: transform .7s cubic-bezier(.4,.2,.2,1), -webkit-transform .7s cubic-bezier(.4,.2,.2,1);
+    -webkit-transition: transform .7s cubic-bezier(.4,.2,.2,1);
+}
+
+.services-flip-container:hover .services-flip-front-container {
+    -ms-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.services-flip-container:hover .services-flip-back-container {
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.services-flip-container-contents {
+    transform: translateZ(60px) !important;
+    -webkit-transform: translateZ(60px) !important;
+}
+
+@media only screen and (max-width: 1380px) {
+
+    .services-child-container {
+        display: grid;
+        display: grid;
+        grid-template-columns: auto auto;
+        /* column-gap: 60px; */
+        row-gap: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .services-heading-container {
+        font-size: 2em;
+    }
+
+    .services-child-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    .services-waves-container {
+        display: none;
+    }
+
+    .services-heading-container {
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .services-heading-container {
+        font-size: 1.4em;
+    }
+
+    .services-flip-container {
+        height: 400px;
+        width: 300px;
+    }
+
+}

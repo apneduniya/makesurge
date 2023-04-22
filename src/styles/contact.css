@@ -1,0 +1,36 @@
+
+.contact-heading-container {
+    margin: 0;
+    padding: 0;
+    /* margin-top: 140px; */
+    color: #012970;
+    font-weight: 700 !important;
+    font-size: 2.2em;
+    line-height: 1.2;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-heading-container p {
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    transition: all .10s;
+}
+
+@media only screen and (max-width: 380px) {
+
+    .contact-heading-container {
+        font-size: 1.6em;
+        padding-top: 40px;
+    }
+
+    .contact-content {
+        font-size: 1em !important;
+    }
+
+}
