@@ -11,7 +11,7 @@ import Contact from './Contact';
 
 import { useRef } from "react";
 import { motion } from "framer-motion";
-import { useFollowPointer } from "./useFollowPointer";
+import useFollowPointer from "./useFollowPointer";
 import Footer from './Footer';
 
 const inter = Inter({ subsets: ['latin'] });

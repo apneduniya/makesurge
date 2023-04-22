@@ -21,3 +21,5 @@ export function useFollowPointer(ref) {
 
   return point;
 }
+
+export default useFollowPointer;
