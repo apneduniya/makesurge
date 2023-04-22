@@ -129,7 +129,7 @@ const MenuItem = ({ id, text, link, toggle }) => {
             variants={itemsVariants}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            className="nav-toggle-li"
+            className={`${tiltNeon.className} nav-toggle-li`}
         >
             {/* <div className="navTextPlaceholder" style={style}> */}
             <Link href={link} scroll={false} className="nav-toggle-link" onClick={toggle}>
@@ -228,7 +228,7 @@ const Navbar = (props) => {
                 ) : (
                     ""
                 )}
-                <ul className="nav-links-container">
+                <ul className={`${tiltNeon.className} nav-links-container`}>
                     <li><Link href="#home" className="nav-links" scroll={false} >Home</Link></li>
                     <li><Link href="#services" className="nav-links" scroll={false} >Services</Link></li>
                     {/* <li><Link href="#projects" className="nav-links" scroll={false}>Projects</Link></li> */}

@@ -5,7 +5,7 @@ Using Font Faces for loading ttf files for CSS because in production the google 
 
 */
 
-@font-face {
+/* @font-face {
     font-family: 'Tilt Neon';
     src: url('/public/fonts/TiltNeon-Regular.ttf');
     src: url('/public/fonts/TiltNeon-Regular.ttf') format('embedded-opentype'),
@@ -24,7 +24,7 @@ Using Font Faces for loading ttf files for CSS because in production the google 
     src: url('/public/fonts/VarelaRound-Regular.ttf');
     src: url('/public/fonts/VarelaRound-Regular.ttf') format('embedded-opentype'),
         url('/public/fonts/VarelaRound-Regular.ttf') format('truetype'),
-}
+} */
 
 * {
     box-sizing: border-box;
