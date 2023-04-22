@@ -51,7 +51,7 @@ const App = () => {
         <meta name="name" content="Make Surge" />
         <meta name="title" content="Content Creation, Website Design and Maintenance, Video Editing, Graphic Designing, Social Media Management Services" />
         <meta name="description" content="We offer top-quality services in content creation, website design and maintenance, social media management, video editing, and graphic designing to help your business reach its full potential." />
-        <meta name="keywords" content="content creation, website design, website maintenance, video editing, graphic designing, business services, social media, social media management, makesurge, content creator" />
+        <meta name="keywords" content="content creation, website design, website maintenance, video editing, graphic designing, business services, social media, social media management, makesurge, content creator, MakeSurge, makesurge.co" />
         <meta name="author" content="MakeSurge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
