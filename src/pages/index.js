@@ -13,6 +13,8 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Footer from './Footer';
 
+import LOGO from "/public/LOGO.png";
+
 const inter = Inter({ subsets: ['latin'] });
 
 const useFollowPointer = (ref) => {
@@ -44,11 +46,26 @@ const App = () => {
   return (
     <>
       <Head>
-        <title>MakeSurge</title>
+        <title>MakeSurge | Content Creator</title>
+
         <meta name="name" content="Make Surge" />
-        <meta name="description" content="Make Surge" />
-        <meta name="description" content="content creator, social media, website creator, manager, website" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="title" content="Content Creation, Website Design and Maintenance, Video Editing, Graphic Designing, Social Media Management Services" />
+        <meta name="description" content="We offer top-quality services in content creation, website design and maintenance, social media management, video editing, and graphic designing to help your business reach its full potential." />
+        <meta name="keywords" content="content creation, website design, website maintenance, video editing, graphic designing, business services, social media, social media management, makesurge, content creator" />
+        <meta name="author" content="MakeSurge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+        <meta property="og:title" content="Content Creation, Website Design and Maintenance, Video Editing, Graphic Designing, Social Media Management Services" />
+        <meta property="og:description" content="We offer top-quality services in content creation, website design and maintenance, video editing, social media management and graphic designing to help your business reach its full potential." />
+        <meta property="og:url" content="https://www.makesurge.co" />
+        <meta name="twitter:card" content={LOGO} />
+        <meta name="twitter:title" content="MakeSurge | Content Creator" />
+        <meta name="twitter:description" content="We offer top-quality services in content creation, website design and maintenance, social media management, video editing, and graphic designing to help your business reach its full potential." />
+        <meta name="twitter:image" content="https://twitter.com/thatsmeadarsh/photo" />
+
         <link rel="icon" href="/LOGO.png" />
       </Head>
 

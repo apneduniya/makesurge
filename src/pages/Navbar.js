@@ -42,33 +42,6 @@ const Path = (props) => (
     />
 );
 
-const MenuToggle = ({ toggle }) => (
-    <button onClick={toggle} className="nav-toggle-button" style={{ backgroundColor: "transparent", border: "0 solid transparent" }}>
-        <svg width="23" height="23" viewBox="0 0 23 23" style={{ color: "#012970" }}>
-            <Path
-                variants={{
-                    closed: { d: "M 2 2.5 L 20 2.5" },
-                    open: { d: "M 3 16.5 L 17 2.5" }
-                }}
-            />
-            <Path
-                d="M 2 9.423 L 20 9.423"
-                variants={{
-                    closed: { opacity: 1 },
-                    open: { opacity: 0 }
-                }}
-                transition={{ duration: 0.1 }}
-            />
-            <Path
-                variants={{
-                    closed: { d: "M 2 16.346 L 20 16.346" },
-                    open: { d: "M 3 2.5 L 17 16.346" }
-                }}
-            />
-        </svg>
-    </button>
-);
-
 const navVariants = {
     open: {
         opacity: 1,
@@ -163,6 +136,55 @@ const Navbar = (props) => {
     const [latestScroll, setLatestScroll] = useState(null);
 
     const { scrollY } = useScroll();
+
+    const MenuToggle = ({ toggle }) => (
+        <button onClick={toggle} className="nav-toggle-button" style={{ backgroundColor: "transparent", border: "0 solid transparent" }}>
+            {/* <svg width="23" height="23" viewBox="0 0 23 23" style={{ color: "#012970" }}>
+                <Path
+                    variants={{
+                        closed: { d: "M 2 2.5 L 20 2.5" },
+                        open: { d: "M 3 16.5 L 17 2.5" }
+                    }}
+                />
+                <Path
+                    d="M 2 9.423 L 20 9.423"
+                    variants={{
+                        closed: { opacity: 1 },
+                        open: { opacity: 0 }
+                    }}
+                    transition={{ duration: 0.1 }}
+                />
+                <Path
+                    variants={{
+                        closed: { d: "M 2 16.346 L 20 16.346" },
+                        open: { d: "M 3 2.5 L 17 16.346" }
+                    }}
+                />
+            </svg> */}
+            <svg
+                viewBox="0 0 100 100"
+                height="50"
+                width="50"
+                style={isOpen? { transform: "rotate(45deg)" }: {}}
+            >
+                <path
+                    strokeLinecap="round"
+                    style={isOpen ? { strokeWidth: 4, fill: "none", transition: "stroke-dasharray 400ms, stroke-dashoffset 400ms", stroke: "#012970", strokeDasharray: "25 160", strokeDashoffset: -64 } : { strokeWidth: 4, fill: "none", transition: "stroke-dasharray 400ms, stroke-dashoffset 400ms", stroke: "#012970", strokeDasharray: "25 160" }}
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+                />
+                <path
+                    strokeLinecap="round"
+                    style={isOpen ? { strokeWidth: 4, fill: "none", transition: "stroke-dasharray 400ms, stroke-dashoffset 400ms", stroke: "#012970", strokeDasharray: "60 142", transformOrigin: "50%", transition: "transform 400ms", transform: "rotate(90deg)" } : { strokeWidth: 4, fill: "none", transition: "stroke-dasharray 400ms, stroke-dashoffset 400ms", stroke: "#012970", strokeDasharray: "60 142", transformOrigin: "50%", transition: "transform 400ms" }}
+                    d="m 30,50 h 40"
+                />
+                <path
+                    strokeLinecap="round"
+                    style={isOpen ? { strokeWidth: 4, fill: "none", transition: "stroke-dasharray 400ms, stroke-dashoffset 400ms", stroke: "#012970", strokeDasharray: "25 85", transformOrigin: "50%", strokeDashoffset: -64 } : { strokeWidth: 4, fill: "none", transition: "stroke-dasharray 400ms, stroke-dashoffset 400ms", stroke: "#012970", strokeDasharray: "25 85", transformOrigin: "50%" }}
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+                />
+            </svg>
+        </button>
+    );
 
     const Navigation = () => (
         // <motion.ul variants={navVariants} className={isOpen? "navToggleUl": "navToggleUlRemove"}>
