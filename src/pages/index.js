@@ -24,7 +24,9 @@ const App = () => {
     <>
       <Head>
         <title>MakeSurge</title>
+        <meta name="name" content="Make Surge" />
         <meta name="description" content="Make Surge" />
+        <meta name="description" content="content creator, social media, website creator, manager, website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/LOGO.png" />
       </Head>
