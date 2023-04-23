@@ -1,14 +1,15 @@
 
 ## MakeSurge | Designing & Content Creating
-<p align="left">
-  Transform your online presence with our stunning designs and reach new heights as a content creator with MakeSurge : Where Creativity Meets Strategy
+<p align="center">
+  Transform your online presence with our stunning designs and reach new heights as a content creator with MakeSurge : 
+  Where Creativity Meets Strategy
 </p>
 
 <br />
 <hr />
 <br />
 
-## Demo Images of the project
+## 🖼️ Demo Images of the project
 
 ![Screenshot 2023-04-23 121530](https://user-images.githubusercontent.com/113763427/233831874-85495750-0c1c-47ff-b245-34f3ef0e7e75.png)
 <p align="center">
