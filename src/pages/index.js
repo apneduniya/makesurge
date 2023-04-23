@@ -46,7 +46,7 @@ const App = () => {
   return (
     <>
       <Head>
-        <title>MakeSurge | Content Creator</title>
+        <title>MakeSurge | Designing & Content Creating</title>
 
         <meta name="name" content="Make Surge" />
         <meta name="title" content="Content Creation, Website Design and Maintenance, Video Editing, Graphic Designing, Social Media Management Services" />
@@ -62,7 +62,7 @@ const App = () => {
         <meta property="og:description" content="We offer top-quality services in content creation, website design and maintenance, video editing, social media management and graphic designing to help your business reach its full potential." />
         <meta property="og:url" content="https://www.makesurge.co" />
         <meta name="twitter:card" content={LOGO} />
-        <meta name="twitter:title" content="MakeSurge | Content Creator" />
+        <meta name="twitter:title" content="MakeSurge | Designing & Content Creating" />
         <meta name="twitter:description" content="We offer top-quality services in content creation, website design and maintenance, social media management, video editing, and graphic designing to help your business reach its full potential." />
         <meta name="twitter:image" content="https://twitter.com/thatsmeadarsh/photo" />
 
