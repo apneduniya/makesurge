@@ -2,11 +2,11 @@
 ## MakeSurge | Designing & Content Creating
 <p align="center">
   Transform your online presence with our stunning designs and reach new heights as a content creator with MakeSurge : 
+</p>
+<p align="center">
   Where Creativity Meets Strategy
 </p>
 
-<br />
-<hr />
 <br />
 
 ## 🖼️ Demo Images of the project
