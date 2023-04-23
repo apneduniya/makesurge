@@ -1,3 +1,40 @@
+
+## MakeSurge | Designing & Content Creating
+<p align="center">
+  Transform your online presence with our stunning designs and reach new heights as a content creator with MakeSurge : Where Creativity Meets Strategy
+</p>
+
+<br />
+
+![Screenshot 2023-04-23 121530](https://user-images.githubusercontent.com/113763427/233831874-85495750-0c1c-47ff-b245-34f3ef0e7e75.png)
+<p align="center">
+  Hero Section
+</p>
+
+![Screenshot 2023-04-23 122134](https://user-images.githubusercontent.com/113763427/233831922-dafd5daa-82e4-45d9-b27e-cea7d897e5dd.png)
+<p align="center">
+  Why we rock ?
+</p>
+
+![Screenshot 2023-04-23 122222](https://user-images.githubusercontent.com/113763427/233831949-31264717-6a80-4323-906d-238f021a4f99.png)
+<p align="center">
+  Service Section
+</p>
+
+![Screenshot 2023-04-23 122247](https://user-images.githubusercontent.com/113763427/233831970-998909ed-9b71-4b16-837f-5e101890ca31.png)
+<p align="center">
+  Service Section
+</p>
+
+![Screenshot 2023-04-23 122322](https://user-images.githubusercontent.com/113763427/233831980-189f0fa7-603d-41f4-881e-b009bf5fd925.png)
+<p align="center">
+  Contact & Footer Section
+</p>
+
+<br />
+<hr />
+<br />
+
 ## 💡Inspiration
 
 My inspiration behind your project is to provide a **comprehensive platform for content creators to grow their online presence and establish trust with their audience**. A one-stop-shop that can offer a range of content creation and management services _to help creators optimize their workflow and maximize their impact_. Additionally, I have noticed a gap in the market for a service that **_combines fast and efficient content delivery_** with **_accuracy and fabulous design_**. By combining all of these elements, I have provided a _unique_, _beautiful_ and _valuable resource_ for content creators looking to take their brand to the next level.
