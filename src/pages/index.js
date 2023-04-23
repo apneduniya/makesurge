@@ -42,6 +42,16 @@ const useFollowPointer = (ref) => {
 const App = () => {
   const ref = useRef(null);
   const { x, y } = useFollowPointer(ref);
+  const [loading, setLoading] = useState(true);
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
@@ -71,31 +81,62 @@ const App = () => {
 
       <Script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" />
 
-      <motion.div
-        ref={ref}
-        animate={{ x, y }}
-        className='mouse-listener'
-        style={{
-          width: 150,
-          height: 150,
-          borderRadius: "100%",
-          background: "#6E88FE",
-          position: "fixed",
-        }}
-        transition={{
-          type: "spring",
-          damping: 3,
-          stiffness: 50,
-          restDelta: 0.001
-        }}
-      />
+      {/* PRELOADING CODE */}
 
-      <Navbar />
-      <Home />
-      <Features />
-      <Services />
-      <Contact />
-      <Footer />
+      {loading ? (
+        <div className='loading-background'>
+          <div className="loading-scene">
+            <div className="loading-shadow"></div>
+            <div className="loading-jumper">
+              <div className="loading-spinner">
+                <div className="loading-scaler">
+                  <div className="loading-loader">
+                    <div className="loading-cuboid">
+                      <div className="loading-cuboid__side"></div>
+                      <div className="loading-cuboid__side"></div>
+                      <div className="loading-cuboid__side"></div>
+                      <div className="loading-cuboid__side"></div>
+                      <div className="loading-cuboid__side"></div>
+                      <div className="loading-cuboid__side"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <>
+
+          {/* END CODE */}
+
+          < motion.div
+            ref={ref}
+            animate={{ x, y }}
+            className='mouse-listener'
+            style={{
+              width: 150,
+              height: 150,
+              borderRadius: "100%",
+              background: "#6E88FE",
+              position: "fixed",
+            }}
+            transition={{
+              type: "spring",
+              damping: 3,
+              stiffness: 50,
+              restDelta: 0.001
+            }}
+          />
+
+          <Navbar />
+          <Home />
+          <Features />
+          <Services />
+          <Contact />
+          <Footer />
+        </>
+      )}
 
     </>
   )
