@@ -34,7 +34,7 @@ const useFollowPointer = (ref) => {
     window.addEventListener("pointermove", handlePointerMove);
 
     return () => window.removeEventListener("pointermove", handlePointerMove);
-  }, []);
+  }, [ref]);
 
   return point;
 }
@@ -42,16 +42,16 @@ const useFollowPointer = (ref) => {
 const App = () => {
   const ref = useRef(null);
   const { x, y } = useFollowPointer(ref);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 5000);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setLoading(false);
+  //   }, 5000);
 
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <>

@@ -231,7 +231,7 @@ const Navbar = (props) => {
                 style={
                     (latestScroll > 50 || props.isBackground === true) ? { backgroundColor: "rgb(255, 255, 255)", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }
                         :
-                        { position: "fixed", top: 0, left: 0 }
+                        { }
                 }
             >
                 <div className="navbar-name-container">
